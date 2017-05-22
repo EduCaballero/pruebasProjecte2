@@ -1,0 +1,42 @@
+#vote-concert .contentTable td:nth-child(7),
+#vote-concert .contentTable td:nth-child(8),
+#vote-music .contentTable td:nth-child(5),
+#vote-music .contentTable td:nth-child(6),
+.contentTable th:last-child,
+.contentTable td:last-child {
+    text-align: center;
+}
+
+
+#vote-music .contentTable td:nth-child(2) {
+    padding: 4px 6px;
+}
+
+#vote-music .contentTable td:nth-child(2) img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+#vote-concert button,
+#vote-music button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+.enabled {
+    color: #3b5998;
+}
+
+.disabled {
+    color: #9c9c9c;
+    padding: 0 11px;
+}
+
+@media screen and (max-width: 1080px) {
+    #vote-music {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+}

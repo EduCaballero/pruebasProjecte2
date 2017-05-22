@@ -1,0 +1,153 @@
+.form-crt-row {
+    display: block;
+    margin-bottom: 18px;
+}
+
+.form-crt-row-sub {
+    width: 50%;
+    position: relative;
+}
+
+form label {
+    display: inline-block;
+    margin-right: 18px;
+    text-align: right;
+    color: #6f6f6f;
+    font-weight: bold;
+    width: 60px;
+    padding: 4px 0;
+}
+
+form input[type="text"], form select {
+    font-family: inherit;
+    font-size: inherit;
+    height: 30px;
+    padding: 6px 10px;
+    max-width: 130px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.3);
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+form select {
+    padding: 0 6px;
+}
+
+form input[type="text"]:focus, form select:focus {
+    border: 1px solid #4cb1ff;
+}
+
+#pending th:last-child, #pending td:nth-child(5),
+#pending td:nth-child(6), #pending td:nth-child(7), 
+#pending td:last-child, #assigned th:last-child, 
+#assigned td:nth-child(8), #assigned td:nth-child(9), 
+#assigned td:last-child, #inscritos-table th:last-child,
+#inscritos-table td:nth-child(3), #inscritos-table td:nth-child(6), 
+#inscritos-table td:last-child {
+    text-align: center;
+}
+
+form input.btn {
+    margin-top: 6px;
+    margin-left: 16px;
+    width: 80px;
+    padding: 4px 12px;
+}
+
+.act-del, .act-upd-pending, 
+.act-ins, .act-accept,
+.act-upd-assigned, .act-drop {
+    color: #3b5998;
+}
+
+.act-del:hover, .act-upd-pending:hover, 
+.act-ins:hover, .act-accept:hover,
+.act-upd-assigned:hover, .act-drop:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#update-pending-modal {
+    display: none;
+}
+
+#update-pending-modal .modal-body h3 {
+    margin-top: 4px;
+}
+
+#inscritos-modal {
+    display: none;
+}
+
+#inscritos-table img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#update-assigned-modal {
+    display: none;
+}
+
+#update-pending-table, #update-assigned-table {
+    display: table;
+    margin-bottom: 20px;
+}
+
+#update-assigned-table th:last-child,
+#update-assigned-table td:last-child {
+    text-align: center;
+}
+
+
+span.error {
+    position: absolute;
+    top: -2px;
+    left: 220px;
+    font-size: 12px;
+    padding: 8px;
+    z-index: 10;
+    background: #aa5050;
+    color: #fff;
+}
+
+span.error:after {
+    top: 50%;
+    right: 100%;
+    content: " ";
+    border: solid transparent;
+    position: absolute;
+    pointer-events: none;
+    height: 0;
+    width: 0;
+    border-color: rgba(170, 80, 80, 0);
+    border-right-color: #aa5050;
+    border-width: 5px;
+    margin-top: -5px;
+}
+
+.inputError {
+    box-shadow: 0 0 4px red;
+}
+
+@media screen and (max-width: 1080px) {
+    #assigned {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    form label {
+        width: 90px;
+        text-align: left;
+    }
+
+    form input.btn {
+        margin-left: 0;
+    }
+}
+
+

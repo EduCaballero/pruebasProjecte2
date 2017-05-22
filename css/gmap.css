@@ -1,0 +1,45 @@
+html,body {
+    padding: 0;
+    margin: 0;
+}
+
+#map-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+    height: 700px;
+    text-align: left;
+}
+
+#map img {
+    height: 200px;
+}
+
+b {
+    font-weight:bold;
+}
+
+.slider>div img{
+    height: 200px;
+    width: 350px;
+}
+
+#centrarSlider {
+	max-width: 1000px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.slider {
+	display: inline-block !important; 
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+.slick-slide img {
+	display: inline-block !important;
+}

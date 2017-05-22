@@ -1,0 +1,23 @@
+#pending-table th:last-child,
+#pending-table td:nth-child(8) {
+    text-align: center;
+}
+
+.enabled {
+    color: #3b5998;
+}
+
+.enabled:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.disabled {
+    color: #9c9c9c;
+}
+
+@media screen and (max-width: 1080px) {
+    #assigned {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+}
